@@ -5,19 +5,22 @@ public class Main {
         System.out.println("Вариант 2, РИБО-01-21, Совков Максим Сергеевич");
 
         Scanner in = new Scanner(System.in);
-        TelephoneChar telephone = new TelephoneChar();
-
+        Seller seller = new Seller();
+        System.out.println("Input telephone manufacturer");
+        seller.manufacturer = in.next();
         System.out.println("Input telephone num");
-        telephone.setNum(in.next());
+        seller.setNum(in.next());
         System.out.println("Input telephone provaider");
-        telephone.setProvaider(in.next());
+        seller.setProvaider(in.next());
         System.out.println("Input telephone balance");
-        telephone.setBalance(in.nextInt());
+        seller.setBalance(in.nextInt());
         System.out.println("Input telephone model");
-        telephone.setModel(in.next());
+        seller.setModel(in.next());
         System.out.println("Input telephone charge");
-        telephone.setCharge(in.nextInt());
-        System.out.println(telephone.toString());
+        seller.setCharge(in.nextInt());
+        System.out.println(seller.toString());
+        seller.modify();
+        System.out.println(seller.toString());
 
     }
 }

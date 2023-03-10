@@ -2,6 +2,7 @@
 public class TelephoneChar extends SimCard {
   private int charge;
   private String model;
+  public String manufacturer;
 
   public void setCharge(int charge) {
     this.charge = charge;
@@ -19,6 +20,7 @@ public class TelephoneChar extends SimCard {
 
   public String toString(){
     return "Telephone{" +
+            "manufacturer = " + this.manufacturer + "," +
             "model = " + this.model + "," +
             " charge = " + this.charge + "," +
             " number = " + this.num + "," +
